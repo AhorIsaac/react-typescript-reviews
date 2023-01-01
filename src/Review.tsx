@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, FC, ReactElement } from "react";
 import people from "./data";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 
-const Review = () => {
+const Review: FC = (): ReactElement => {
   const [index, setIndex] = useState<number>(0);
   const { name, job, image, text } = people[index];
 
@@ -57,7 +57,7 @@ const Review = () => {
           <FaChevronRight />
         </button>
       </div>
-      <button type="button" className="random-btn" onClick={randomPerson}>
+      <button type="button" className="button-86" onClick={randomPerson}>
         suprise me
       </button>
     </article>

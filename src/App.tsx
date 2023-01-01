@@ -1,7 +1,7 @@
-import React from "react";
+import React, { FC, ReactElement } from "react";
 import Review from "./Review";
 
-function App() {
+const App: FC = (): ReactElement => {
   return (
     <main>
       <section className="container">
@@ -13,6 +13,6 @@ function App() {
       </section>
     </main>
   );
-}
+};
 
 export default App;
